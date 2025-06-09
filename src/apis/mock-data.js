@@ -6,7 +6,7 @@ export const mockData = {
     type: 'public', // 'private'
     ownerIds: [], // Những users là Admin của board
     memberIds: [], // Những users là member bình thường của board
-    columnOrderIds: ['column-id-01', 'column-id-02', 'column-id-03'], // Thứ tự sắp xếp / vị trí của các Columns trong 1 boards
+    columnOrderIds: ['column-id-01', 'column-id-02', 'column-id-03', 'column-id-04'], // Thứ tự sắp xếp / vị trí của các Columns trong 1 boards
     columns: [
       {
         _id: 'column-id-01',
@@ -20,7 +20,7 @@ export const mockData = {
             columnId: 'column-id-01',
             title: 'Title of card 01',
             description: 'Markdown Syntax',
-            cover: 'https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/480777869_614938684484447_5218832871267751517_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=YzfJ5VuBfX0Q7kNvwEDW_sG&_nc_oc=AdmMkXf-WZepDxo6H_-iAGSkp0XmpFNJqO6JJkQDm79hKdmNVGe39g-KNnXjWpMchKE&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=LuPxQTEGWrUzGd0UGfQ19g&oh=00_AfK4aIc33itv-J2UjTnUiRdmWr9ego_u9uQRfCfHW_O-3A&oe=68464C42',
+            cover: 'https://scontent.fhan19-1.fna.fbcdn.net/v/t39.30808-6/480777869_614938684484447_5218832871267751517_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEvMjUxIpIxtAyDIBKvOu81CcAy3JEL7XkJwDLckQvteX0ArKHwEPs_Ynb9Ri1J9Im8mhDEK3DCtlKst_Hgyei0&_nc_ohc=mgujHDLCIOAQ7kNvwFInSoX&_nc_oc=AdnGbnOrdwPfP96g5xer7dG_UHSQ2qfvex-qKwAh2xLiaK1W6scPacK0U5ju7SmD_KA&_nc_zt=23&_nc_ht=scontent.fhan19-1.fna&_nc_gid=YS2jUY-sfx2R16ioJJRAng&oh=00_AfPhIPaPXRTIJYrUyPe_DEyo4skj0XONccNSq7Xstx8gDA&oe=684C7342',
             memberIds: ['test-user-id-01'],
             comments: ['test comment 01', 'test comment 02'],
             attachments: ['test attachment 01', 'test attachment 02', 'test attachment 03']
@@ -53,6 +53,19 @@ export const mockData = {
           { _id: 'card-id-11', boardId: 'board-id-01', columnId: 'column-id-03', title: 'Title of card 11', description: null, cover: null, memberIds: [], comments: [], attachments: [] },
           { _id: 'card-id-12', boardId: 'board-id-01', columnId: 'column-id-03', title: 'Title of card 12', description: null, cover: null, memberIds: [], comments: [], attachments: [] },
           { _id: 'card-id-13', boardId: 'board-id-01', columnId: 'column-id-03', title: 'Title of card 13', description: null, cover: null, memberIds: [], comments: [], attachments: [] }
+        ]
+      },
+      {
+        _id: 'column-id-04',
+        boardId: 'board-id-01',
+        title: 'Empty Column 04',
+        cardOrderIds: ['column-id-04-placeholder-card'],
+        cards: [
+          { _id: 'column-id-04-placeholder-card',
+            boardId: 'board-id-01',
+            columnId: 'column-id-04',
+            FE_PlaceholderCard: true
+          }
         ]
       }
     ]
